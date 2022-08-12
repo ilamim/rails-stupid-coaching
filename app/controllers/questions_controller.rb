@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   def answer
     if params[:user_question].upcase == 'I AM GOING TO WORK RIGHT NOW!'
-      @coach_answer = ''
+      @coach_answer = 'Great!'
     elsif params[:user_question][-1] == '?'
       @coach_answer = 'Silly question, get dressed and go to work!'
     else
