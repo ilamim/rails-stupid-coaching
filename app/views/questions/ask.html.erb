@@ -1,4 +1,7 @@
-<form action="/answer" method="get" data-turbo="false">
-  <input type="text" name="user_question" value="<%= params[:question] %>" placeholder="Ask your coach anything">
-  <input type="submit" value="Ask!">
-</form>
+<div class="mx-auto" style="width: 400px;">
+    <h1> Stupid Coaching </h1>
+    <form action="/answer" method="get" data-turbo="false">
+      <input type="text" name="user_question" value="<%= params[:question] %>" placeholder="Ask your coach anything">
+      <input type="submit" type="button" class="btn btn-dark" value="Ask!">
+    </form>
+</div>
